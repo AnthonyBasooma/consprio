@@ -36,25 +36,25 @@
 #' @importFrom magrittr "%>%"
 #'
 #' @export
-conswat <-function(data, cols, weights, area, spp, params, n=7){
+conswat <-function(data, cols, weights, area, spp, params, n=8){
   spp      <- enquo(spp)
   area     <- enquo(area)
   weights  <- enquo(weights)
 
-  if(n>7){
-    rlang::abort("The argument 'n' is IUCN status which  must not be greater than 7 or zero",
+  if(n>8){
+    rlang::abort("The argument 'n' is IUCN status which  must not be greater than 8 or zero",
                  .subclass = "out_of_range",
                  n=n)
   }else if(n==0){
-    rlang::abort("The argument 'n' is IUCN status which  must not be greater than 7 or zero",
+    rlang::abort("The argument 'n' is IUCN status which  must not be greater than 8 or zero",
                  .subclass="out_of_range",
                  n=n)
-  } else if(n<7){
+  } else if(n<8){
     rlang::warn("The argument 'n'  must be equal to IUCN status considered.
-                The default value is 7")
+                The default value is 8")
   }
   if(n !=round(n)){
-    rlang::abort("The argument 'n' must be an integer of 1 to 7",
+    rlang::abort("The argument 'n' must be an integer of 1 to 8",
                  .class = "non_integer",
                  n=n)
   }
@@ -130,7 +130,7 @@ conswat <-function(data, cols, weights, area, spp, params, n=7){
 
 #' @keywords conservation priority index
 #'
-#' @references Basooma et al. 2020. Using the novel priority index in prioritising
+#' @references Basooma et al. 2022. Using the novel priority index in prioritising
 #' the selection of inland water bodies for site-based fish conservation.
-#' Conservation Biology, 1, (2), 123-134.
+#' Ecology and Evolution.
 NULL
