@@ -1,0 +1,21 @@
+---
+title: "consprior"
+author: "Anthony Basooma, Mark Olokotum, Vianny Natugonza"
+date: "1 August 2020"
+output:
+  font-family: default
+  word_document: default
+word_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r libraries}
+library(consprio)
+library(rmarkdown)
+```
+Diversity indices have been widely used to differentiate the diversity of habitats or water bodies based on their similarities or differences in their ecological, species and genetic variabilities. The diversity indices have differing weaknesses and strength thus determining their level of applicability and dependability in taking decisions while selecting which habitat or waterbody is suitable for conservation. The indices either consider the diversity differences and similarities at different levels of measurement. For example, alpha diversity (the diversity differences within a habitat or waterbody), beta (between water bodies or habitat), and gamma (the whole ecosystem). However, there is a higher likelihood that some waterbodies also possess rare species which are endemic to a particular waterbody and therefore requiring a high priority at either international, national or local scale for conservation and management.
+The “consprior” package contains an assortment of both ecological and species components to aid in identifying which habitat or water body are/is of high priority for conservation. The index is based on the species IUCN conservation status, endemicity or rarity of the species among the waterbodies or habitats considered, the size of a waterbody, and the number of species in the habitat or waterbody. The package can be used to prioritise at waterbody and habitat level. 
+Prioritising at waterbody level (Basooma et al)

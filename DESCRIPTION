@@ -1,0 +1,21 @@
+Package: consprio
+Type: Package
+Title: Conservation Priority Index
+Version: 0.1.0
+Author: Anthony Basooma
+Maintainer: Anthony Basooma <bas4ster@gmail.com>
+Description: The packages allows to prioritise the selection of waterbodies or habitats
+    for conservation and management based on the species composition, the surface area of 
+    the waterbody or habitat, the endemeicity or rarenes of the species among or betweeen
+    the waterbodies or habitats in question, and IUCN conservation status for all the 
+    species considered in particular.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports: 
+Depends: 
+       ggplot2, 
+       magrittr, 
+       dplyr, 
+       rlang
+RoxygenNote: 7.1.2
